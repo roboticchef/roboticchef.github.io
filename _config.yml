@@ -13,3 +13,5 @@ plugins:
 theme_config:
   appearance: auto
   show_description: true
+
+img: "assets/images"

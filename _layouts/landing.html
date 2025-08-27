@@ -1,0 +1,22 @@
+---
+# uses your theme's default wrapper; if you prefer, remove layout: default
+layout: default
+---
+
+{% include header.html %}
+
+<main>
+  {% assign featured = site.posts | where: "featured", true | first %} {% if
+  featured %}
+  <article class="post">
+    <h2>
+      <a href="{{ featured.url | relative_url }}">{{ featured.title }}</a>
+    </h2>
+    {% if featured.subtitle %}
+    <p class="subtitle">{{ featured.subtitle }}</p>
+    {% endif %}
+    <small>{{ featured.date | date_to_string }}</small>
+    {{ featured.content }}
+  </article>
+  {% else %} {{ content }} {% endif %}
+</main>
