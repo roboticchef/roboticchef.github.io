@@ -1,1 +1,4 @@
-We build robot
+---
+layout: home
+title: RoboChef
+---

@@ -1,0 +1,10 @@
+entries:
+  - title: RoboChef
+  - title: Posts
+    post_list:
+      limit: 5
+      show_more: true
+      show_more_text: See all posts →
+      show_more_url: /archive
+  - title: About
+    url: /about
