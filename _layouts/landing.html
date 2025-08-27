@@ -3,7 +3,7 @@
 layout: default
 ---
 
-{% include header.html %}
+{% include header.html %}{% include mermaid.html %}
 
 <main>
   {% assign featured = site.posts | where: "featured", true | first %} {% if
